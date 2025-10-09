@@ -243,6 +243,7 @@ a {
     line-height: 24px;
     letter-spacing: 0;
     text-align: justify;
+    hyphens: manual;
 }
 
 .content__mobile-app-store {
@@ -364,6 +365,7 @@ a {
     line-height: 24px;
     letter-spacing: 0;
     text-align: justify;
+    hyphens: manual;
 }
 
 .content__avatar-description span:first-child {
