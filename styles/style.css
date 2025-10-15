@@ -8,7 +8,7 @@
     --base-header-ff: Merriweather;
     --base-color: #000000;
     --alt-color: #2094F3;
-    --base-br: 45px;
+    --base-br: 30px;
 }
 
 .page-content {
@@ -484,15 +484,15 @@ a {
 }
 
 .view-indent {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
 
 .header__inner {
     margin-bottom: 0;
-    margin-top: 22px;
-    padding: 15px 45px;
+    margin-top: 10px;
+    padding: 12px 25px;
 }
 
 .header__menu-nav-container ul {
@@ -500,7 +500,7 @@ a {
 }
 
 .content__sections-container {
-    padding: 15px 60px 30px 60px;
+    padding: 15px 30px;
 }
 
 .content__sections-container h2 {
@@ -999,5 +999,3 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
