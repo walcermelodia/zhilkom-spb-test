@@ -1,7 +1,7 @@
 @import "normalize.css";
 
 :root {
-    --base-bc: #E3E3E3;
+    --base-bc: #f4f4f7;
     --base-view-container-bc: #FFFFFF;
     --footer-bc: #FFFFFF;
     --base-ff: "Lato";
@@ -23,7 +23,7 @@
 
 body {
     font-family: var(--base-ff), sans-serif;
-    background: #f4f4f7;
+    background: var(--base-bc);
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -63,6 +63,10 @@ a {
     justify-content: space-between;
 }
 
+.header__menu-container ul {
+    gap: 30px;
+}
+
 .logo__image-container {
     width: 35px;
     height: 35px;
@@ -88,7 +92,7 @@ a {
 }
 
 .header__info-box {
-    gap: 10px;
+    gap: 7px;
 }
 
 .header__info-box img {
@@ -109,7 +113,7 @@ a {
     color: var(--base-color);
 }
 
-.header__menu-nav-container ul li a{
+.header__menu-nav-container ul li a {
     display: block;
     font-family: var(--base-header-ff), sans-serif;
     font-size: 14px;
@@ -496,7 +500,7 @@ a {
 }
 
 .header__menu-nav-container ul {
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
 }
 
 .content__sections-container {
@@ -841,21 +845,21 @@ a {
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
     .header__menu-container {
         position: fixed;
-        top: 0;
+        top: 65px;
         left: 0;
         width: 100%;
         height: 100vh;
-        background: var(--base-bc);
+        background: var(--footer-bc);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         z-index: 1000;
         transform: translateX(-100%);
         transition: all .3s;
         align-content: flex-start;
-        padding: 80px 25px 24px;
+        padding: 10px 25px 24px;
     }
 
     .burger {
@@ -865,10 +869,9 @@ a {
 
     .header__menu-container.active {
         transform: translateX(0%);
-        top: 0;
+        top: 65px;
         left: 0;
         transition: all .3s;
-
     }
 
     .header__logo-container {
@@ -878,7 +881,7 @@ a {
 
     .header__menu-nav-container {
         order: 1;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .header__info-container {
@@ -886,16 +889,33 @@ a {
     }
 
     .header__menu-nav-container ul {
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .header__menu-nav-container ul li {
         width: 100%;
+        padding-bottom: 7px;
+        border-bottom: 1px solid var(--base-bc);
+    }
+
+    .header__menu-nav-container ul li a {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .header__info-box img {
+        display: none;
+    }
+    .header__info-box {
+        font-size: 12px;
+        font-weight: 400;
     }
 
 
     .header__info-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 25px;
     }
 
     .header__info-box {
