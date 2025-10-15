@@ -878,6 +878,10 @@ a {
         transition: all .3s;
     }
 
+    body.lock {
+        background: var(--footer-bc);
+    }
+
     .header__menu-nav-container {
         order: 1;
         margin-bottom: 40px;
