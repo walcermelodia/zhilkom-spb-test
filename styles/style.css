@@ -1122,6 +1122,10 @@ a {
     .content__sections-container-list {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .header__menu-container {
+        padding: 70px 35px 24px;
+    }
 }
 
 @media (max-width: 520px) {
