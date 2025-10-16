@@ -982,6 +982,7 @@ a {
 
     .content__mobile-app-container {
         flex-direction: column;
+        padding: 20px 30px;
     }
 
     .content__mobile-app-info {
@@ -1003,16 +1004,8 @@ a {
         overflow: hidden;
     }
 
-    /*.content__mobile-app-image-container img {*/
-    /*    position: absolute;*/
-    /*    top: 50%;*/
-    /*    max-width: 100%;*/
-    /*    object-fit: contain;*/
-    /*    display: block;*/
-    /*}*/
-
     .content__mobile-app-image-back {
-        left: 35%;
+        left: 40%;
         transform: translate(-50%, -50%);
         z-index: 1;
 
@@ -1024,10 +1017,9 @@ a {
     }
 
     .content__mobile-app-image-front {
-        left: 65%;
+        left: 60%;
         transform: translate(-50%, -50%);
         z-index: 2;
-
         position: absolute;
         top: 50%;
         max-width: 100%;
