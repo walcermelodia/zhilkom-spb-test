@@ -6,6 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="icon" href="/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/icons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/images/icons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="/images/icons/favicon-32x32.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,7 +29,7 @@
                 <div class="header__logo-container">
                     <a href="#" class="header__logo">
                         <div class="logo__image-container">
-                            <img class="logo_image" src="images/icons/logo.svg" alt="ЖилКом СПБ" loading="lazy">
+                            <img class="logo_image" src="images/icons/logo.svg" alt="логотип сайта ЖилКом СПБ" loading="lazy">
                         </div>
                         <span class="logo__title">ЖилКом СПБ</span>
                     </a>
@@ -31,50 +37,52 @@
                 <div class="header__menu-container">
                     <div class="header__info-container">
                         <div class="header__info-box">
-                            <img src="images/icons/phone.svg" alt="phone">
+                            <img src="images/icons/phone.svg" alt="номер телефона компании" loading="lazy">
                             <a href="tel:+78126799601" class="header__info-box--value">+7-(812)-679-96-01</a>
                         </div>
                         <div class="header__info-box">
-                            <img src="images/icons/email.svg" alt="email">
+                            <img src="images/icons/email.svg" alt="email компании" loading="lazy">
                             <a href="mailto:zhilkomspbsad@mail.ru" class="header__info-box--value">zhilkomspbsad@mail.ru</a>
                         </div>
                         <div class="header__info-box">
-                            <img src="images/icons/time.svg" alt="time">
+                            <img src="images/icons/time.svg" alt="График работы" loading="lazy">
                             <div class="header__info-box--value">
                                 вт, чт: 10:00–12:00,  14:00–16:00<br/>
                                 пт: 14:00–16:00
                             </div>
                         </div>
                         <div class="header__info-box">
-                            <img src="images/icons/address.svg" alt="address">
+                            <img src="images/icons/address.svg" alt="адрес компании" loading="lazy">
                             <address class="header__info-box--value">ул. Николая Соколова, д.28, <br/>строение 1, пом.9-Н</address>
                         </div>
                     </div>
-                    <nav class="header__menu-nav-container">
-                        <ul>
-                            <li>
-                                <a href="#">Главная</a>
-                            </li>
-                            <li>
-                                <a href="#">Документы</a>
-                            </li>
-                            <li>
-                                <a href="#">Правила</a>
-                            </li>
-                            <li>
-                                <a href="#">Жителям</a>
-                            </li>
-                            <li>
-                                <a href="#">Оплата</a>
-                            </li>
-                            <li>
-                                <a href="#">Контакты</a>
-                            </li>
-                            <li>
-                                <a href="#">Видеонаблюдение</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="header__menu-nav-actions">
+                        <nav class="header__menu-nav-container">
+                            <ul>
+                                <li>
+                                    <a href="#">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Документы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Правила</a>
+                                </li>
+                                <li>
+                                    <a href="#">Жителям</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__video-button button" type="button">
+                            Видеонаблюдение
+                        </button>
+                    </div>
                 </div>
                 <div class="burger">
                     <span></span>
@@ -85,7 +93,8 @@
         </header>
 
         <main class="content">
-            <div class="content__sections-container view-container view-indent">
+            <h1 class="content__visually-hidden-header">Жилищно-коммунальное хозяйство в городе Сестрорецк</h1>
+            <div id="all sections" class="content__sections-container view-container view-indent">
                 <h2>Все разделы</h2>
                 <div class="content__sections-container-items">
                     <ul class="content__sections-container-list">
@@ -106,10 +115,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="content__mobile-app-container view-container view-indent">
+            <div id="mobile-app" class="content__mobile-app-container view-container view-indent">
                 <div class="content__mobile-app-image-container">
-                    <img class="content__mobile-app-image-back" src="images/mobi_hero-phone-back%201.png" alt="">
-                    <img class="content__mobile-app-image-front" src="images/mobi_hero-phone-front%201.png" alt="">
+                    <img class="content__mobile-app-image-back" src="images/mobi_hero-phone-back%201.png" alt="мобильное приложение МДО" loading="lazy">
+                    <img class="content__mobile-app-image-front" src="images/mobi_hero-phone-front%201.png" alt="мобильное приложение МДО" loading="lazy">
                 </div>
                 <div class="content__mobile-app-info">
                     <div class="content__mobile-app-info-description">
@@ -125,7 +134,7 @@
                                 <a href="#">
                                     <div class="content__mobile-app-store">
                                         <div class="content__store-logo">
-                                            <img src="images/icons/googleplay.svg" alt="Google Play">
+                                            <img src="images/icons/googleplay.svg" alt="Google Play" loading="lazy">
                                         </div>
                                         <span>Google Play</span>
                                     </div>
@@ -133,7 +142,7 @@
                                 <a href="#">
                                     <div class="content__mobile-app-store">
                                         <div class="content__store-logo">
-                                            <img src="images/icons/appstore.svg" alt="App Store">
+                                            <img src="images/icons/appstore.svg" alt="App Store" loading="lazy">
                                         </div>
                                         <span>App Store</span>
                                     </div>
@@ -141,20 +150,20 @@
                                 <a href="#">
                                     <div class="content__mobile-app-store rustore">
                                         <div class="content__store-logo">
-                                            <img src="images/icons/rustore.svg" alt="RuStore">
+                                            <img src="images/icons/rustore.svg" alt="RuStore" loading="lazy">
                                         </div>
                                         <span>RuStore</span>
                                     </div>
                                 </a>
                             </div>
                             <div class="content__mobile-app-qr-code">
-                                <img src="images/qr-code-mobile%201.png" alt="qr code">
+                                <img src="images/qr-code-mobile%201.png" alt="qr code для скачивания приложения" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="content__about-company view-container view-indent">
+            <div id="about" class="content__about-company view-container view-indent">
                 <h2>О компании</h2>
                 <div class="content__about-inner">
                     <div class="content__about-description-container">
@@ -167,13 +176,13 @@
                         </div>
                     </div>
                     <div class="content__about-image">
-                        <img src="images/about-bg.png" alt="">
+                        <img src="images/about-bg.png" alt="задний фон секции о компании" loading="lazy">
                     </div>
                 </div>
             </div>
         </main>
 
-        <footer class="footer view-indent">
+        <footer id="footer" class="footer view-indent">
             <div class="footer__main footer--view-container">
                 <div class="footer__column">
                     <h2 class="footer__column-title">Информация</h2>
@@ -227,14 +236,14 @@
                             <li class="footer-soc1als-item">
                                 <div class="footer-soc1als-logo">
                                     <a href="#" target="_blank" class="footer-soc1als-link">
-                                        <img src="images/icons/vk.svg" alt="Вконтакте">
+                                        <img src="images/icons/vk.svg" alt="Вконтакте" loading="lazy">
                                     </a>
                                 </div>
                             </li>
                             <li class="footer-soc1als-item">
                                 <div class="footer-soc1als-logo">
                                     <a href="#" target="_blank" class="footer-soc1als-link">
-                                        <img src="images/icons/whatsapp.svg" alt="Whatsapp">
+                                        <img src="images/icons/whatsapp.svg" alt="Whatsapp" loading="lazy">
                                     </a>
                                 </div>
                             </li>
@@ -258,7 +267,7 @@
             </div>
             <div class="footer__extra footer--view-container">
                 <div class="footer__copyright">
-                    © <time datetime="2010">2010</time>–<time datetime="2025">2025</time> ООО «Жилком СПБ». Все права защищены.
+                    <p>&copy; <time datetime="2010">2010</time>–<time datetime="2025">2025</time> ООО «Жилком СПБ». Все права защищены.</p>
                 </div>
             </div>
         </footer>
