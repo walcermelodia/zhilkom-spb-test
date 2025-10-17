@@ -953,7 +953,9 @@ a {
     .header__menu-nav-container {
         order: 1;
         margin-bottom: 40px;
+        width: 100%;
     }
+
 
     .header__info-container {
         order: 2;
@@ -962,12 +964,14 @@ a {
     .header__menu-nav-container ul {
         flex-direction: column;
         gap: 15px;
+        align-items: flex-start;
     }
 
     .header__menu-nav-container ul li {
-        width: 100%;
         padding-bottom: 7px;
-        border-bottom: 1px solid var(--base-bc);
+        border-bottom: 1px solid #f6f6f6;
+        width: 100%;
+
     }
 
     .header__menu-nav-container ul li a {
