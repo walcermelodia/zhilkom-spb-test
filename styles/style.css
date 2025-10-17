@@ -900,6 +900,7 @@ a {
         width: 95%;
         z-index: 500;
         left: 2.5%;
+        box-shadow: 0 0 30px #d1d1d1;
     }
 
     .content {
