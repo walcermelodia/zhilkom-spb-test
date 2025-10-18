@@ -903,6 +903,15 @@ a {
         box-shadow: 0 0 30px #d1d1d1;
     }
 
+    a {
+        outline: none;
+        box-shadow: none;
+    }
+
+    a:active {
+        outline: none;
+    }
+
     .content {
         margin-top: 50px;
     }
